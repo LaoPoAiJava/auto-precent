@@ -1,6 +1,6 @@
 <script setup>
   // 导入reactive
-  import { reactive } from 'vue'
+  import { reactive, ref } from 'vue'
 
   // 声明数组
   const state = reactive([])
@@ -37,6 +37,15 @@
   ]
   state.push(...datas)
 
+  let isShow = ref(false);
+
+  function displayHandler() {
+    if(isShow.value) {
+      isShow.value = false;
+    } else {
+      isShow.value = true;
+    }
+  }
 
 </script>
 
@@ -48,9 +57,11 @@
       <div class="fenzi">
         <div>1</div>
         <div>——</div>
-        <div>{{ item.denominator }}</div>
+        <div v-if="isShow">{{ item.denominator }}</div>
+        <!-- <div v-else><input type="text" name="" id="input"></div> -->
       </div>
     </div>
+    <button @click="displayHandler">开关</button>
   </div>
 </template>
 
@@ -65,6 +76,7 @@
     margin: 0 auto;
     color: #E1E1E1;
   }
+  
   .box {
     display: flex;
     justify-content: space-around;
@@ -85,4 +97,5 @@
   .fenzi div:nth-child(2) {
     margin: -5px 0;
   }
+
 </style>
