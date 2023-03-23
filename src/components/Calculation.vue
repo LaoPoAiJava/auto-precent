@@ -23,7 +23,7 @@
     { denominator: 13, result: 7.7 },
     { denominator: 14, result: 7.1 },
     { denominator: 15, result: 6.7 },
-    { denominator: 15.5, result: 6.4 },
+    { denominator: 15.5, result: 6.5 },
     { denominator: 16, result: 6.25 },
     { denominator: 17, result: 5.9 },
     { denominator: 18, result: 5.6 },
