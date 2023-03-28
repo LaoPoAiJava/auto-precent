@@ -19,6 +19,7 @@
     { denominator: 10.5, result: 9.5 },
     { denominator: 11, result: 9.1 },
     { denominator: 11.5, result: 8.7 },
+    { denominator: 11.8, result: 8.5 },
     { denominator: 12, result: 8.3 },
     { denominator: 13, result: 7.7 },
     { denominator: 14, result: 7.1 },
